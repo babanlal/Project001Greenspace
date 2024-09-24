@@ -1,0 +1,5 @@
+PageObjects\AccountRegistrationPage.class
+TestBase\BaseClass.class
+PageObjects\HomePage.class
+PageObjects\BasePage.class
+TestCases\TC001_AccountSignUpTest.class
