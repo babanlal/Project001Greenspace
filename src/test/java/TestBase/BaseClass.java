@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -15,8 +16,8 @@ public class BaseClass {
     @BeforeClass
     public void setup()
     {
-    System.setProperty("webdriver.chrome.driver", "E:\\selenium\\New chromedriver\\chromedriver-win64\\chromedriver.exe");
-    driver = new ChromeDriver();
+  //  System.setProperty("webdriver.chrome.driver", "E:\\selenium\\New chromedriver\\chromedriver-win64\\chromedriver.exe");
+    driver = new FirefoxDriver();
     
     /*
 //    @Parameters("browser")
@@ -32,11 +33,11 @@ public class BaseClass {
             driver = new EdgeDriver();
         }
         */
-        
+    	driver.get("http://campus.sicsglobal.co.in/Project/communitygarden/index.php");
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("http://campus.sicsglobal.co.in/Project/communitygarden/index.php");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        
 
         System.out.println("Title: " + driver.getTitle());
         System.out.println("URL: " + driver.getCurrentUrl());

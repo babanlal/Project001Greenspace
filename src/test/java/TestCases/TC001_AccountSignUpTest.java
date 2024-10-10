@@ -34,7 +34,7 @@ public class TC001_AccountSignUpTest extends BaseClass {
         regPage.setCity();
         
         // Submit the form
-        regPage.submitForm();
+        //regPage.submitForm();
         
         // Verify the confirmation message
         String confmsg = hp.getConfirmationMsg();

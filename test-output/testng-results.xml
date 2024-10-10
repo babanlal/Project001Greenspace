@@ -1,21 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-21T16:17:08 IST" name="Suite" finished-at="2024-09-21T16:17:59 IST" duration-ms="50350">
+  <suite started-at="2024-10-09T22:08:28 CEST" name="Suite" finished-at="2024-10-09T22:09:17 CEST" duration-ms="48881">
     <groups>
     </groups>
-    <test started-at="2024-09-21T16:17:08 IST" name="Test" finished-at="2024-09-21T16:17:59 IST" duration-ms="50350">
+    <test started-at="2024-10-09T22:08:28 CEST" name="Test" finished-at="2024-10-09T22:09:17 CEST" duration-ms="48881">
       <class name="TestCases.TC001_AccountSignUpTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC001_AccountSignUpTest@14c01636]" started-at="2024-09-21T16:17:08 IST" name="setup" finished-at="2024-09-21T16:17:35 IST" duration-ms="26499" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC001_AccountSignUpTest@75ed9710]" started-at="2024-10-09T22:08:28 CEST" name="setup" finished-at="2024-10-09T22:08:54 CEST" duration-ms="25580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifySignup()[pri:0, instance:TestCases.TC001_AccountSignUpTest@14c01636]" started-at="2024-09-21T16:17:35 IST" name="VerifySignup" finished-at="2024-09-21T16:17:58 IST" duration-ms="23322" status="PASS">
+        <test-method signature="VerifySignup()[pri:0, instance:TestCases.TC001_AccountSignUpTest@75ed9710]" started-at="2024-10-09T22:08:54 CEST" name="VerifySignup" finished-at="2024-10-09T22:09:16 CEST" duration-ms="21765" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element with the reference f32c2c7b-f1f5-4215-b250-1b17bc5324d8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [64a1459c-ffc6-432e-930e-3fcdd9d3571c, getElementAttribute {name=index, id=f32c2c7b-f1f5-4215-b250-1b17bc5324d8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0.2, moz:accessibilityChecks: false, moz:buildID: 20241008210941, moz:debuggerAddress: 127.0.0.1:40685, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3532, moz:profile: C:\Users\Hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:40685/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[FirefoxDriver: firefox on windows (64a1459c-ffc6-432e-930e-3fcdd9d3571c)] -> xpath: //select[@name='city']]] -> tag name: option]
+Session ID: 64a1459c-ffc6-432e-930e-3fcdd9d3571c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference f32c2c7b-f1f5-4215-b250-1b17bc5324d8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [64a1459c-ffc6-432e-930e-3fcdd9d3571c, getElementAttribute {name=index, id=f32c2c7b-f1f5-4215-b250-1b17bc5324d8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0.2, moz:accessibilityChecks: false, moz:buildID: 20241008210941, moz:debuggerAddress: 127.0.0.1:40685, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3532, moz:profile: C:\Users\Hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:40685/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[FirefoxDriver: firefox on windows (64a1459c-ffc6-432e-930e-3fcdd9d3571c)] -> xpath: //select[@name='city']]] -> tag name: option]
+Session ID: 64a1459c-ffc6-432e-930e-3fcdd9d3571c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:298)
+at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+at PageObjects.AccountRegistrationPage.setCity(AccountRegistrationPage.java:75)
+at TestCases.TC001_AccountSignUpTest.VerifySignup(TC001_AccountSignUpTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySignup -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestCases.TC001_AccountSignUpTest@14c01636]" started-at="2024-09-21T16:17:58 IST" name="afterClass" finished-at="2024-09-21T16:17:59 IST" duration-ms="386" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestCases.TC001_AccountSignUpTest@75ed9710]" started-at="2024-10-09T22:09:16 CEST" name="afterClass" finished-at="2024-10-09T22:09:17 CEST" duration-ms="1452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
